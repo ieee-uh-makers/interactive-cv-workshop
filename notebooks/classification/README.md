@@ -30,6 +30,7 @@ The neural network we are using today is called MobileNet, which is a neural net
 ### Dense
 
 - Densely connected layer, meaning that each unit or "dimension" in the densely connected layer is connected to every previous unit, and every next unit.
+- Dense units are convenient to use for the final layer of a network, since they take into account every single part of the last layers output. In our classification network, we use a single dense unit to compute the probability that something is a cell phone.
 ![Dense](dense.png "Dense")
 
 
