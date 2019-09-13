@@ -21,8 +21,22 @@ Welcome to the Interactive Computer Vision Workshop! The point of these workshop
 - Once Anaconda is installed, open Conda Navigator
 - Go to the environments tab, create a new Python 3.7 environment called "cv"
 - Make sure the "cv" environment is selected in the environment dropdown
-- On the packages dropdown menu, select "Not Installed" and search for / install opencv and jupyter
+- On the packages dropdown menu, select "Not Installed" and search for / install: 
+```
+opencv
+py-opencv
+jupyter
+ipywidgets
+tensorflow
+keras
+```
 - Go back to the "Home" tab, and start Jupyter Notebook.
 
 ### MacOS / Linux
 - When installing anaconda, make sure you choose yes when it asks if you want to run conda init
+- You may need to manually start Jupyter notebook like so if you get crashes:
+```bash
+export KMP_DUPLICATE_LIB_OK=TRUE
+conda activate cv
+jupyter notebook
+```
