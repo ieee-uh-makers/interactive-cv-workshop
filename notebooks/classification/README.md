@@ -18,6 +18,7 @@ The neural network we are using today is called MobileNet, which is a neural net
 - Batch normalization "normalizes" its input batchwise. Let F(X) -> Y represent our batch normalization, where X has the shape Sample x Height x Width x Channel
 - Y_sc = X_sc - mean(X_c) / std(X_c)
 - Essentially, we compute the mean and standard deviation of each channel accross every sample in the batch, and use them to normalize each channel.
+- Batch normalization has been shown to cause the network to learn more balanced feature representations, leading towards stronger generalization on unseen data and faster training.
 
 ### ReLU
 
