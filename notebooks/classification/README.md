@@ -6,9 +6,9 @@ What is a neural network you may ask? Put simply, a neural network takes an inpu
 
 Since the operations are all differentiable, we can compute the gradient of the error (partial derivative of the error with respect to each input), and use it to move the networks coeffecients and biases (weights) towards making a correct prediction. The error or "loss" of our neural network is most simply stated as the absolute difference between Y_true and Y_prediction. In this workshop, Y_true represents whether an image contains a cell phone, and Y_pred represents the prediction the network makes with its operations and weights. The closer these two values, the lower the error. During "training", we attempt to iteratively minimize the loss by providing many examples to the neural network. 
 
-The neural network we are using today is called MobileNet, which is a neural network which was created to be computationally efficient for deployment on devices such as cell phones. MobileNet takes a 224x224x3 (height x width x channels) image as an input. We add a final layer onto the final layer of MobileNet which represents the probability of whether our class is present within the image. MobileNet contains a few different types of layers
+The neural network we are using today is called MobileNet, which is a neural network which was created to be computationally efficient for deployment on devices such as cell phones. MobileNet takes a 224x224x3 (height x width x channels) image as an input. We add a final layer onto the final layer of MobileNet which represents the probability of whether our class is present within the image. MobileNet contains a few different types of layers which we detail below.
 
-### Conv2D (and a few variants)
+### Conv2D (and several of its variants)
 
 - Two dimensional convolution, or a "sliding window" going accross an image outputing a dot product of each window as the output. The window is called a "kernel", and the neural network learns the values of each kernel.
 ![MobileNet](conv.png "MobileNet")
