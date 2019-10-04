@@ -9,7 +9,7 @@ from tensorflow.keras.layers import Dense, Conv2D, BatchNormalization, Activatio
 import tensorflow.keras as keras
 from tensorflow.keras import backend as K
 import tensorflow as tf
-from tensorflow.contrib import tensorrt as tftrt
+# from tensorflow.contrib import tensorrt as tftrt
 
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
