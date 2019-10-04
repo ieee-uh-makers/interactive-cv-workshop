@@ -12,13 +12,14 @@ Simply put, object detection is the localization of an object within an image. H
 | Convolutional Neural Network  | 224x224x3 Image | 7x7x256 Feature Map  |
 | Classification Layer (Top)  | 7x7x256 Feature Map  | Probability of Class Present in Image  |
 
-Our detection network has two different outputs.
-
 ### Neural Network Terminology: Top
 
 Top essentially means the end of the network, where the network outputs its prediction, and there are no additional layers after. It is common practice to take a convolutional neural network trained for a certain task, remove the top layers and replace them with something else and run training on the new task using the weights from a different task as a starting point. This is called "transfer learning", and often results in training taking far less time / require less data than starting from scratch.
 
 ## Detection Network
+
+Here is out detection network
+
 |   | Input  | Output |
 |---|---|---|
 | Convolutional Neural Network  | 224x224x3 Image | 7x7x256 Feature Map  |
