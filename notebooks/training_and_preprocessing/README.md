@@ -14,6 +14,12 @@ So we have all of the ingredients, what else do we need to know?
 
 First of all, we need some way to establish how well our model performs at any given point on examples it has never seen before. To accomplish this, we create a train validation split, where we reserve a certain percentage of data only for testing model performance.
 
+### Overfitting
+
+One of the biggest problems we can run into during training is overfitting. The biggest cause of overfitting is not having enough data. What happens is training keeps improving, but validation starts to go downhill or leveling off. Essentially, continuing training provides no additional benefit once overfitting kicks in. We will address a strategy for helping with this below!
+
+![Overfitting](overfit.jpg)
+
 ### Small Datasets
 
 We don't always have a massive amount of training data. One way we can make our data go farther is data augmentation. To do this, we can do things like flip the image horizontally, rotate it, shift it, crop out sections, and more. See the augmentation.ipynb notebook for examples of this in action!
@@ -50,4 +56,3 @@ Histogram equalization can improve the contrast of an image, emphasizing importa
 Which one is better? It depends on the task at hand, but generally for images its hard to go wrong with one of the  Z-scoring strategies.
 
 [histo]: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html
-[augnb]: https://github.com/ieee-uh-makers/interactive-cv-workshop/blob/master/notebooks/training_and_preprocessing/augmentation.ipynb
