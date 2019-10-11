@@ -32,8 +32,10 @@ Selecting the right activations for the last layer of your network and loss func
 |---|---|---|
 | Binary Classifcation (Two Classes)  | Sigmoid  | Binary Crossentropy  |
 | Classification  | Softmax  | Categorical Crossentropy  |
-| Regression  | Linear  | Mean Squared Error  |
-| Regression  | Linear  | Mean Absolute Error  |
+| Regression  | Linear  | Mean Squared Error (L2)  |
+| Regression  | Linear  | Mean Absolute Error (L1)  |
+
+For regression problems, L2 is usually better unless there is alot of noise in the labeling of the data. In this case, L1 can improve things, but has its own set of issues. [Huber Loss][huber] attempts to combine the convergent performance of L1 with the noise resistance of L2. I usually start with L2, and if I run into problems try L1/Huber.
 
 ### Batch Size
 
@@ -56,3 +58,4 @@ Histogram equalization can improve the contrast of an image, emphasizing importa
 Which one is better? It depends on the task at hand, but generally for images its hard to go wrong with one of the  Z-scoring strategies.
 
 [histo]: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html
+[huber]: https://en.wikipedia.org/wiki/Huber_loss
