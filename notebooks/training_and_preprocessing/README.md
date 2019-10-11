@@ -39,7 +39,7 @@ Often we have to do some preprocessing of data before providing it to the networ
 
 ## Histogram Equalization
 
-- Histogram equalization can improve the contrast of an image, emphasizing important information more. There are several techniques that are available, but generally speaking adaptive (local / sliding window) methods work best. The one I would recommend is CLAHE, or contrast limited adaptive histogram equalization. [You can find an overview of the common methods here][histo].
+Histogram equalization can improve the contrast of an image, emphasizing important information more. There are several techniques that are available, but generally speaking adaptive (local / sliding window) methods work best. The one I would recommend is CLAHE, or contrast limited adaptive histogram equalization. [You can find an overview of the common methods here][histo].
 
 ## Data Scaling / Standardization
 
@@ -50,3 +50,4 @@ Often we have to do some preprocessing of data before providing it to the networ
 Which one is better? It depends on the task at hand, but generally for images its hard to go wrong with one of the  Z-scoring strategies.
 
 [histo]: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html
+[augnb]: https://github.com/ieee-uh-makers/interactive-cv-workshop/blob/master/notebooks/training_and_preprocessing/augmentation.ipynb
